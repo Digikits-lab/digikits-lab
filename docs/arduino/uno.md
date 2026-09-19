@@ -68,9 +68,9 @@ Os pinos do Arduino UNO podem ser utilizados para diferentes funções, como ent
 | A4 | Entrada analógica / SDA | I²C |
 | A5 | Entrada analógica / SCL | I²C |
 
-### Comunicação
+## Comunicação
 
-#### Serial
+### Serial
 
 ```text
 D0 → RX
@@ -79,11 +79,11 @@ D1 → TX
 
 Os pinos D0 e D1 são utilizados pela interface serial do Arduino UNO.
 
-:::
+:::warning
 Evite utilizar D0 e D1 para outros dispositivos enquanto estiver utilizando a comunicação serial ou fazendo upload do programa.
 :::
 
-#### I²C
+### I²C
 
 ```text
 A4 → SDA
@@ -92,7 +92,7 @@ A5 → SCL
 
 A comunicação I²C permite conectar dispositivos como sensores, displays e módulos RTC utilizando apenas dois sinais.
 
-#### SPI
+### SPI
 
 ```text
 D10 → SS
