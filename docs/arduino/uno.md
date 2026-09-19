@@ -42,8 +42,6 @@ Os pinos do Arduino UNO podem ser utilizados para diferentes funções, como ent
 
 ### Pinos digitais
 
-### Pinos digitais
-
 | Pino | Função | Recurso |
 |---|---|---|
 | D0 | Digital / RX | Comunicação Serial |
