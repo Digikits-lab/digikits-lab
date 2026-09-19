@@ -36,27 +36,68 @@ O **Arduino UNO** é uma das placas de desenvolvimento mais utilizadas para apre
 
 ## Pinagem
 
-Os pinos digitais do Arduino UNO podem ser utilizados como entradas ou saídas.
+Os pinos do Arduino UNO podem ser utilizados para diferentes funções, como entradas e saídas digitais, PWM, comunicação serial, I²C e SPI.
 
-Os pinos **0 e 1** também são utilizados pela comunicação serial:
+### Pinos digitais
 
-- **D0 (RX)** — recepção serial
-- **D1 (TX)** — transmissão serial
+| Pino | Função | Recurso |
+|---|---|---|
+| D0 | Digital / RX | Comunicação Serial |
+| D1 | Digital / TX | Comunicação Serial |
+| D2 | Digital | Interrupção externa |
+| D3 | Digital / PWM | Interrupção externa |
+| D4 | Digital | — |
+| D5 | Digital / PWM | PWM |
+| D6 | Digital / PWM | PWM |
+| D7 | Digital | — |
+| D8 | Digital | — |
+| D9 | Digital / PWM | PWM |
+| D10 | Digital / PWM | SPI / SS |
+| D11 | Digital / PWM | SPI / MOSI |
+| D12 | Digital | SPI / MISO |
+| D13 | Digital | SPI / SCK / LED integrado |
 
-As entradas analógicas são:
+### Entradas analógicas
 
-- **A0**
-- **A1**
-- **A2**
-- **A3**
-- **A4**
-- **A5**
+| Pino | Função | Recurso |
+|---|---|---|
+| A0 | Entrada analógica | ADC |
+| A1 | Entrada analógica | ADC |
+| A2 | Entrada analógica | ADC |
+| A3 | Entrada analógica | ADC |
+| A4 | Entrada analógica / SDA | I²C |
+| A5 | Entrada analógica / SCL | I²C |
+
+### Comunicação
+
+#### Serial
+
+```text
+D0 → RX
+D1 → TX
 
 Os pinos **A4 e A5** também podem ser utilizados para comunicação I²C.
+A4 → SDA
+A5 → SCL
+
+Os pinos SPI são ...
+D10 → SS
+D11 → MOSI
+D12 → MISO
+D13 → SCK
 
 ## Alimentação
 
-O Arduino UNO pode ser alimentado de diferentes formas:
+| Pino  | Função                         |
+| ----- | ------------------------------ |
+| 5V    | Saída de 5 V                   |
+| 3.3V  | Saída de 3,3 V                 |
+| GND   | Terra                          |
+| VIN   | Entrada de alimentação externa |
+| RESET | Reinicia o microcontrolador    |
+| AREF  | Referência analógica           |
+
+Antes de conectar um módulo ou sensor, consulte a tensão de alimentação e a tensão lógica exigidas pelo dispositivo.
 
 ### USB
 
@@ -71,6 +112,8 @@ Também é possível utilizar uma fonte externa compatível com a entrada de ali
 :::warning
 Sempre verifique a tensão da fonte antes de conectar o Arduino.
 :::
+
+
 
 ## Primeiro programa
 
