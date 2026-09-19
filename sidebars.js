@@ -5,14 +5,15 @@ const sidebars={tutorialSidebar:['intro',{type:'category',label:'Arduino',items:
   items: [
     'esp32/intro',
     'esp32/devkit',
-    {
+   {
       type: 'category',
       label: 'Exemplos',
-      collapsible: false,
-      items: [
-        'esp32/exemplos/blink',
-        'esp32/exemplos/gpio',
-      ],
-    },
+      collapsible: true,
+      collapsed: true,
+  items: [
+    'esp32/exemplos/blink',
+    'esp32/exemplos/gpio',
+  ],
+},,
   ],
 },{type:'category',label:'Sensores',items:['sensores/dht22','sensores/hc-sr04']},{type:'category',label:'Módulos',items:['modulos/rele','modulos/rfid']},'projetos','tutoriais','guias']};module.exports=sidebars;
