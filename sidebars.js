@@ -8,6 +8,7 @@ const sidebars={tutorialSidebar:['intro',{type:'category',label:'Arduino',items:
     {
       type: 'category',
       label: 'Exemplos',
+      collapsible: false,
       items: [
         'esp32/exemplos/blink',
         'esp32/exemplos/gpio',
