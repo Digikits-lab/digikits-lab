@@ -41,8 +41,9 @@ Ele possui recursos semelhantes aos do Arduino UNO, mas apresenta um formato men
 
 O Arduino Nano possui pinos digitais, entradas analógicas e interfaces de comunicação que permitem conectar sensores, displays, módulos e outros dispositivos.
 
-> A identificação dos pinos pode variar visualmente entre diferentes versões e fabricantes do Arduino Nano baseado no ATmega328P. Consulte a serigrafia da sua placa antes de realizar as conexões.
+![Pinout completo do Arduino Nano](/img/arduino/arduino-nano-pinout.png)
 
+> A identificação dos pinos pode variar visualmente entre diferentes versões e fabricantes do Arduino Nano baseado no ATmega328P. Consulte a serigrafia da sua placa antes de realizar as conexões.
 ### Pinos digitais
 
 | Pino | Função | Recurso |
