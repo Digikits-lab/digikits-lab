@@ -38,6 +38,10 @@ O **Arduino UNO** é uma das placas de desenvolvimento mais utilizadas para apre
 
 Os pinos do Arduino UNO podem ser utilizados para diferentes funções, como entradas e saídas digitais, PWM, comunicação serial, I²C e SPI.
 
+![Pinout completo do Arduino UNO](/img/arduino/arduino-uno-pinout.png)
+
+### Pinos digitais
+
 ### Pinos digitais
 
 | Pino | Função | Recurso |
